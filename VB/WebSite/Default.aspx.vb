@@ -30,7 +30,7 @@ Partial Public Class Master_Detail_Two_Grids
 			detailGridView2.DataBind()
 		End If
    End Sub
-   Protected Sub detailGridView1_CustomCallback(ByVal sender As Object, ByVal e As DevExpress.Web.ASPxGridView.ASPxGridViewCustomCallbackEventArgs)
+   Protected Sub detailGridView1_CustomCallback(ByVal sender As Object, ByVal e As DevExpress.Web.ASPxGridViewCustomCallbackEventArgs)
 		Thread.Sleep(1000)
 
 		Dim values As Object = masterGrid1.GetRowValues(masterGrid1.FocusedRowIndex, New String() { "CategoryID" })
@@ -43,7 +43,7 @@ Partial Public Class Master_Detail_Two_Grids
 		detailGridView1.DataBind()
    End Sub
 
-   Protected Sub detailGridView2_CustomCallback(ByVal sender As Object, ByVal e As DevExpress.Web.ASPxGridView.ASPxGridViewCustomCallbackEventArgs)
+   Protected Sub detailGridView2_CustomCallback(ByVal sender As Object, ByVal e As DevExpress.Web.ASPxGridViewCustomCallbackEventArgs)
 		Thread.Sleep(1000)
 
 		Dim values As Object = masterGrid2.GetRowValues(masterGrid2.FocusedRowIndex, New String() { "CategoryID" })

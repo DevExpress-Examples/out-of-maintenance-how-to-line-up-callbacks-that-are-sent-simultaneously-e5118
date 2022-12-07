@@ -29,7 +29,7 @@ public partial class Master_Detail_Two_Grids : System.Web.UI.Page
             detailGridView2.DataBind();
         }
     }
-   protected void detailGridView1_CustomCallback(object sender, DevExpress.Web.ASPxGridView.ASPxGridViewCustomCallbackEventArgs e) {
+   protected void detailGridView1_CustomCallback(object sender, DevExpress.Web.ASPxGridViewCustomCallbackEventArgs e) {
         Thread.Sleep(1000);
 
         object values = masterGrid1.GetRowValues(masterGrid1.FocusedRowIndex, new string[] { "CategoryID" });
@@ -42,7 +42,7 @@ public partial class Master_Detail_Two_Grids : System.Web.UI.Page
         detailGridView1.DataBind();
     }
 
-   protected void detailGridView2_CustomCallback(object sender, DevExpress.Web.ASPxGridView.ASPxGridViewCustomCallbackEventArgs e) {
+   protected void detailGridView2_CustomCallback(object sender, DevExpress.Web.ASPxGridViewCustomCallbackEventArgs e) {
         Thread.Sleep(1000);
 
         object values = masterGrid2.GetRowValues(masterGrid2.FocusedRowIndex, new string[] { "CategoryID" });
